@@ -12,10 +12,22 @@ public class Main {
         test(zhiguli);
         System.out.println("Priora");
         test(priora);
+        cicli();
     }
 
     private static void test(Car car) {
         car.wroomWroom();
+    }
+
+    private static void cicli() {
+//        for (int i = 0; i < 3; i++) {
+//            System.out.println(i);
+//        }
+        int b = 0;
+        do {
+            System.out.println(b);
+            b++;
+        } while (b != 3);
     }
 
 }
