@@ -4,6 +4,8 @@ import oop.Car;
 import oop.Priora;
 import oop.Zhiguli;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Zhiguli zhiguli = new Zhiguli();
@@ -13,6 +15,7 @@ public class Main {
         System.out.println("Priora");
         test(priora);
         cicli();
+        sortirovka();
     }
 
     private static void test(Car car) {
@@ -28,6 +31,26 @@ public class Main {
             System.out.println(b);
             b++;
         } while (b != 3);
+    }
+
+    private static void sortirovka() {
+        int[] mas = {116, 34, 12, 16, 75};
+
+        boolean gotovo = false;
+        int y;
+        while (!gotovo) {
+            gotovo = true;
+            for (int i = 0; i < mas.length-1; i++) {
+                if (mas[i] > mas[i+1]) {
+                    gotovo = false;
+
+                    y = mas[i];
+                    mas[i] = mas[i+1];
+                    mas[i+1] = y;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(mas));
     }
 
 }
