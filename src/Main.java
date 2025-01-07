@@ -15,7 +15,9 @@ public class Main {
         System.out.println("Priora");
         test(priora);
         cicli();
-        sortirovka();
+        var mas = new int[] {116, 34, 12, 16, 75};
+        sortirovka(mas);
+        System.out.println(Arrays.toString(mas));
     }
 
     private static void test(Car car) {
@@ -33,9 +35,7 @@ public class Main {
         } while (b != 3);
     }
 
-    private static void sortirovka() {
-        int[] mas = {116, 34, 12, 16, 75};
-
+    private static void sortirovka(int[] mas) {
         boolean gotovo = false;
         int y;
         while (!gotovo) {
