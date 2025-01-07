@@ -1,9 +1,11 @@
 package oop;
 
+import moreobjects.Color;
+
 public class Zhiguli extends EconomAuto {
 
     public Zhiguli() {
-        super(80);
+        super(80, Color.WHITE);
     }
 
     @Override
